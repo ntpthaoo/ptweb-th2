@@ -1,0 +1,10 @@
+#show table{
+    border: thin black solid;
+}
+#show table tr td{
+    padding-right:120px;
+    border: thin black solid;
+}
+input#col{
+    margin-left: 13px ;
+}

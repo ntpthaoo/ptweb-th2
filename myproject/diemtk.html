@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <div class="Top">
+            <h4>
+                Tính điểm tổng kết
+            </h4>
+        </div>
+        <div class="form" onsubmit="event.preventDefault();">
+            <form action="">
+                Nhập điểm chuyên cần:<br>
+                <input id="cc"  type="text" name="cc">
+                <br>
+                Nhập điểm giữa kì:<br>
+                <input id="gk"  type="text" name="gk">
+                <br>
+                Nhập điểm cuối kì:<br>
+                <input id="ck" type="text" name="ck">
+                <br>
+                <br>
+                <button onclick="Submit(); ">Tính</button>
+                <br>
+                <br>
+                Điểm tổng kết:<br>
+                <input id="tk" type="text" name="tk">
+            </form>
+        </div>
+</body>
+<script>
+    function Submit(){
+        
+        tk.value = (parseFloat(cc.value)*0.1 + parseFloat(gk.value)*0.2 + parseFloat(ck.value)*0.7).toFixed(2) ;
+    }
+    
+</script>
+</html>
+
+
+
+
